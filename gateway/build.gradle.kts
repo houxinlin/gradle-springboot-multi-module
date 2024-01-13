@@ -14,12 +14,9 @@ ext {
     set("springCloudVersion", "2023.0.0-RC1")
 }
 dependencies {
-    implementation ("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
     implementation ("org.springframework.cloud:spring-cloud-starter-gateway")
     testImplementation ("org.springframework.boot:spring-boot-starter-test")
-    testImplementation ("org.springframework.cloud:spring-cloud-starter-contract-stub-runner")
-
-    implementation ("org.springframework.cloud:spring-cloud-starter-circuitbreaker-reactor-resilience4j")
+    implementation(files("D:\\project\\java\\invoke-starter\\build\\libs\\spring-invoke-starter.jar"))
 
 }
 dependencyManagement {

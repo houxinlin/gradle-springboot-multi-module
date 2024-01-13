@@ -1,0 +1,4 @@
+server:
+  port: 994
+  servlet:
+    context-path: /dsf
